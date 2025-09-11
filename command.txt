@@ -1,0 +1,1 @@
+$ProjectName="MyApp"; clear; Invoke-Expression ("dotnet run --project 'f:\C#\DesignPatterns\{Project}\{Project}.csproj'" -replace "\{Project\}", $ProjectName)
