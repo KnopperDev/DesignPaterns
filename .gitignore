@@ -1,0 +1,13 @@
+# VS code files
+.vscode
+.vs
+
+# Project files
+bin
+obj
+
+# Zips
+*.zip
+*.tar.gz
+*.rar
+*.7z
