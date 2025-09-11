@@ -30,6 +30,7 @@ namespace ObserverPattern.Displays
         public void Display()
         {
             Console.WriteLine($"Forecast: More of the same: {temperature}F degrees and {humidity}% humidity and {pressure} Pa pressure");
+            Console.WriteLine("-------------------------------------------");
         }
     }
 }
