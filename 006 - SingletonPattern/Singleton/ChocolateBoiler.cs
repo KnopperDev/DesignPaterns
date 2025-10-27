@@ -8,6 +8,8 @@ namespace Singleton
 {
     internal class ChocolateBoiler
     {
+        private static ChocolateBoiler? uniqueInstance = new ChocolateBoiler();
+
         private bool empty;
         private bool boiled;
 
@@ -21,6 +23,18 @@ namespace Singleton
             boiled = false;
         }
         // To fill the boiler it must be empty and once it is full, we set the empty and boiled flag
+
+        public static ChocolateBoiler GetInstance
+        {
+            get
+            {
+                if (uniqueInstance == null)
+                {
+                    uniqueInstance = new ChocolateBoiler();
+                }
+                return uniqueInstance;
+            }
+        }
         public void fill()
         {
             if(empty)
