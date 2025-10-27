@@ -19,8 +19,9 @@ namespace CommandPattern.Classes.Commands
             }
         }
         public void Undo(){
-            foreach (Command c in commands){
-                c.Undo();
+            // undo in reverse order
+            for (int i = commands.Length - 1; i >= 0; i--){
+                commands[i].Undo();
             }
         }
     }

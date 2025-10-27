@@ -18,9 +18,11 @@ namespace CommandPattern.Classes.Commands
 
         public void Execute()
         {
+            light.On();
         }
         public void Undo()
         {
+            light.Off();
         }
     }
 }

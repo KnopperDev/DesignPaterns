@@ -16,10 +16,12 @@ namespace CommandPattern.Classes.Commands
         }
         public void Execute()
         {
+            garageDoor.Up();
         }
 
         public void Undo()
         {
+            garageDoor.Down();
         }
     }
 }

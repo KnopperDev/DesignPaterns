@@ -16,9 +16,11 @@ namespace CommandPattern.Classes.Commands
         }
         public void Execute()
         {
+            stereo.Off();
         }
         public void Undo()
         {
+            stereo.On();
         }
     }
 }
