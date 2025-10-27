@@ -149,11 +149,12 @@ namespace DecoratorPattern
             Frappe = new Cond.Icecream(Frappe);
             PrintBeverage(Frappe);
 
-            Bev.Beverage IrishCoffee = new Bev.Espresso();
-            IrishCoffee = new Cond.Espresso(IrishCoffee);
-            IrishCoffee = new Cond.Whiskey(IrishCoffee);
-            IrishCoffee = new Cond.Whip(IrishCoffee);
-            PrintBeverage(IrishCoffee);
+            Bev.Beverage VendiIrishCoffee = new Bev.Espresso();
+            VendiIrishCoffee.Size = Bev.Size.VENDI;
+            VendiIrishCoffee = new Cond.Espresso(VendiIrishCoffee);
+            VendiIrishCoffee = new Cond.Whiskey(VendiIrishCoffee);
+            VendiIrishCoffee = new Cond.Whip(VendiIrishCoffee);
+            PrintBeverage(VendiIrishCoffee);
 
         }
 
